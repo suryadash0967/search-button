@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700&family=Kaisei+Opti:wght@700&family=Kanit:wght@400;500;600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    transition: all 0.3s ease;
+}
+
+#check {
+    display: none;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    background-color: #FF676D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+
+.input-area {
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#check:checked~.input-area {
+    width: 23rem !important;
+
+    .lab-icon {
+        color: #fff;
+        background: #FF676D;
+        border-radius: 0 25px 25px 0;
+        border-right: 1px solid #FF676D;
+        position: absolute;
+        right: -4px;
+        top: 0;
+        width: 3rem;
+    }
+}
+
+
+.type-area {
+    border-radius: 25px 25px;
+    font-size: 15px;
+    height: 2.8rem;
+    outline: none;
+    border: none;
+    padding-left: 17px;
+}
+
+.icon {
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    right: 0;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 17px;
+    color: #FF676D;
+    font-weight: bolder;
+}
